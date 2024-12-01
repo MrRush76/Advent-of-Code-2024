@@ -19,9 +19,11 @@ def find_sim(left, right):
       sim_rating += left[i] * c
     return sim_rating
 
+
 # Driver
 left = []
 right = []
+
 
 with open("input.txt", "r") as file:
     for line in file:
@@ -32,6 +34,7 @@ with open("input.txt", "r") as file:
 
         left.append(data[0])
         right.append(data[1])
+
 
 print(f'Diff: {find_diff(left, right)}')
 print(f'Sim:  {find_sim(left, right)}')
