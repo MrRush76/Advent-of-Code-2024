@@ -24,10 +24,9 @@ def main():
       data[i] = list(map(int, data[i].strip().split()))
     for i in range(len(data)):
       is_safe = inc_or_dec(list(data[i])) and adj_lvls(list(data[i]))
-      print(is_safe)
       if is_safe:
         safe_rep = safe_rep + 1
-        print(f"Number of safe reports is : {safe_rep}")
+    print(f"Number of safe reports is : {safe_rep}")
 
 main()
 
