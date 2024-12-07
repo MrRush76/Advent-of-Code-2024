@@ -22,7 +22,6 @@ for i in range(len(map)):
 
 direction = 'N'
 out_of_map = False
-
 while not out_of_map:
   if direction == 'N':
     if pos[0] - 1 >= 0:
